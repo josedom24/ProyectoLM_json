@@ -26,16 +26,11 @@ def cuantos_estudiantes (datos):
 
 def nombresyapodo_casa (datos,casa):
     lista = []
-    validar = False
     for n in datos.get("personajes"):
         if n.get("casaDeHogwarts")==casa:
-            validar = True
-    if validar == True:
-        print("Personaje:",n.get("personaje"))
-        print("Apodo:",n.get("apodo"))
-        print("\r")
-    else:
-        print("La casa introducida es incorrecta")
+            print("Personaje:",n.get("personaje"))
+            print("Apodo:",n.get("apodo"))
+            print("\r")
     return lista
 
 def nombre_padremadre (datos,hijo):
